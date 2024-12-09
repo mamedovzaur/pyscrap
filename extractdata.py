@@ -46,11 +46,11 @@ def scrap_data(driver,surl):
         driver.find_element_by_id('showContact').click()
     except:
         mydb = mysql.connector.connect(
-        host="144.91.81.143",
+        host="ip_add",
         port="53306",
-        user="admin",
-        password="RtyFgh123!@#",
-        database="rltr"
+        user="username",
+        password="superpass",
+        database="db"
         )
         mycursor = mydb.cursor()
         sql = "update tb_tutaz_url set status=%s where siteurl=%s"
@@ -79,11 +79,11 @@ def scrap_data(driver,surl):
     print(mulkiyyetci)
     if 'Vasitəçi' in mulkiyyetci:
         mydb = mysql.connector.connect(
-        host="144.91.81.143",
+        host="ip_add",
         port="53306",
-        user="admin",
-        password="RtyFgh123!@#",
-        database="rltr"
+        user="username",
+        password="superpass",
+        database="db"
         )
         mycursor = mydb.cursor()
         sql = "update tb_tutaz_url set status=%s where siteurl=%s"
